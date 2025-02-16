@@ -2,14 +2,13 @@
 import { onMounted } from "vue";
 import * as PIXI from 'pixi.js';
 import { Spine } from 'pixi-spine';
-import json from '../../assets/json/xj.json';
 
 onMounted(() => {
     const app = new PIXI.Application({ background: '#1099bb', resizeTo: window });
     // await app.init({ background: '#1099bb', resizeTo: window });
     document.getElementById('pixi-skeleton-container').appendChild(app.view);
     // 'http://localhost:5173/src/assets/json/xj.json'
-    PIXI.Assets.load('src/assets/json/xj.json').then((resource) => {
+    PIXI.Assets.load('src/assets/mazhanyoujson/lisa.json').then((resource) => {
         console.log(1111, resource);
 
         const skeletonData = resource.spineData;
@@ -24,7 +23,7 @@ onMounted(() => {
         // 播放骨骼动画的频率
         skeleton.state.timeScale = 0.01;
         // 播放骨骼动画
-        skeleton.state.setAnimation(0, 'chuxian', true);
+        skeleton.state.setAnimation(0, 'animation', true);
         // 开始渲染动画
         app.ticker.add(() => {
             skeleton.update(app.ticker.deltaTime);
@@ -32,6 +31,7 @@ onMounted(() => {
         // update yourself
         // skeleton.autoUpdate = true;
     });
+
 })
 
 
