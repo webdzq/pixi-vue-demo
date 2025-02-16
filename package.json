@@ -1,0 +1,46 @@
+{
+  "name": "leafer-project",
+  "version": "0.0.0",
+  "author": "dongzq <dongzhengqi@zyb.com>",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@leafer-in/animate": "^1.0.6",
+    "@leafer-in/arrow": "^1.0.6",
+    "@leafer-in/color": "^1.0.6",
+    "@leafer-in/editor": "^1.0.6",
+    "@leafer-in/flow": "^1.0.6",
+    "@leafer-in/html": "^1.0.6",
+    "@leafer-in/robot": "^1.0.6",
+    "@leafer-in/scroll": "^1.0.6",
+    "@leafer-in/state": "^1.0.6",
+    "@leafer-in/text-editor": "^1.0.6",
+    "@leafer-in/view": "^1.0.6",
+    "@pixi/assets": "^7.4.2",
+    "@pixi/core": "^7.4.2",
+    "@pixi/display": "^7.4.2",
+    "@pixi/graphics": "^7.4.2",
+    "@pixi/mesh": "^7.4.2",
+    "@pixi/mesh-extras": "^7.4.2",
+    "@pixi/sprite": "^7.4.2",
+    "leafer-draw": "^1.0.6",
+    "leafer-editor": "^1.0.6",
+    "leafer-ui": "^1.0.6",
+    "pixi-spine": "^4.0.4",
+    "pixi.js": "7.x",
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@pixi/graphics-extras": "^7.4.2",
+    "@types/node": "^20.8.7",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vue-tsc": "^2.0.29"
+  }
+}
